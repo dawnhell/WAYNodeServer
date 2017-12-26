@@ -21,4 +21,9 @@ app.post("/add/vrphoto", function (req, res) {
   res.send("Ok. Added new VR Photo.");
 });
 
+app.post("/location", function (req, res) {
+    console.log("Received location", req.body.location, moment().format("MMMM Do YYYY, hh:mm:ss a"));
+    res.send("Ok. Added new VR Photo.");
+});
+
 app.listen(3131, () => console.log("App listens port 3131!"));
